@@ -31,7 +31,7 @@ public class StudentGroupService {
                 result.add(student);
             }
         }
-        if(result.size() == 0){
+        if(result.isEmpty()){
             throw new IllegalStateException(
                     String.format("Студент с именем %s и фамилией %s не найден", firstName, secondName)
             );
